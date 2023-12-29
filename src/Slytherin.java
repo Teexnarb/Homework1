@@ -1,4 +1,4 @@
-public class Slytherin extends Hogwarts{
+public class Slytherin extends Hogwarts {
     private int cunning;
     private int determination;
     private int ambition;
@@ -52,5 +52,10 @@ public class Slytherin extends Hogwarts{
 
     public void setLustForPower(int lustForPower) {
         this.lustForPower = lustForPower;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "; Хитрость " + getCunning() + "; Решительность " + getDetermination() + "; Амбициозность " + getAmbition() + "; Жажда власти " + getLustForPower();
     }
 }

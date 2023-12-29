@@ -43,4 +43,9 @@ public class Ravenclaw extends  Hogwarts {
     public void setFullOfCreativity(int fullOfCreativity) {
         this.fullOfCreativity = fullOfCreativity;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "; Мудрость " + getSmart() + "; Остроумие " + getSage() + "; Полны творчеста " + getWitty();
+    }
 }

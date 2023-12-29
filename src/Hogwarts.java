@@ -12,24 +12,26 @@ public class Hogwarts {
     public String getName() {
         return name;
     }
-
     public String getSurname() {
         return surname;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
     public void setSurname(String surname) {
         this.surname = surname;
     }
-
     public int getSpellPower() {
         return spellPower;
     }
-
     public void setSpellPower(int spellPower) {
         this.spellPower = spellPower;
+    }
+    public void compareTo(Hogwarts hogwarts) {
+
+    }
+    @Override
+    public String toString() {
+        return "Имя Фамилия " + getName() + " " + getSurname() + "; Мощность заклинания "+getSpellPower();
     }
 }
